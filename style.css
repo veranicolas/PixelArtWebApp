@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.main-content{
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.opciones{
+    height: 100%;
+    width: 20%;
+    background-color: lightblue;
+}
+
+.area{
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.columna{
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+
+.box{
+    border: 0.5px solid black;
+    height: 100%;
+    width: 10%;
+}
