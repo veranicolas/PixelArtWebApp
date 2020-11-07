@@ -5,6 +5,7 @@ var colorValor = colores.value;
 var erase = document.getElementById('borrar');
 var cajas = document.getElementsByClassName('box');
 var limpiarCanvas = document.getElementById('limpiar');
+var pintar = document.getElementById('brocha');
 
 colores.addEventListener('input', ()=>{
     colorValor = colores.value;
@@ -12,8 +13,6 @@ colores.addEventListener('input', ()=>{
 
 function colorear(e, color){
     var caja = e.target;
-
-    //console.log(colorValor)
 
     if (caja.classList == 'box'){
         caja.style.backgroundColor = color;
@@ -37,3 +36,7 @@ erase.addEventListener('click', borrar);
 window.addEventListener('click', (e)=>{
     colorear(e, colorValor);
 });
+
+pintar.addEventListener('click', ()=>{
+    colorValor = colores.value;
+})
