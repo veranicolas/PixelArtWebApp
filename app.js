@@ -1,4 +1,4 @@
-
+let hola = 'Hello';
 
 var colores = document.getElementById('colores');
 var colorValor = colores.value;
